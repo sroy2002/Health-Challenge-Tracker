@@ -1,5 +1,6 @@
 <div>
   <app-navbar></app-navbar>
   <p class="text-xl m-4 font-semibold">Add User</p>
-  <app-input-field></app-input-field>
+  <app-input-field (newUserData)="addNewUser($event)"></app-input-field>
+  <app-show-users-component [users]="users"></app-show-users-component>
 </div>

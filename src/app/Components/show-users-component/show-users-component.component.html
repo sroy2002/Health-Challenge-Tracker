@@ -1,0 +1,21 @@
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white border border-gray-200">
+    <thead>
+      <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+        <th class="py-3 px-6 text-left">Username</th>
+        <th class="py-3 px-6 text-left">Workout Types</th>
+        <th class="py-3 px-6 text-left">Number of Workouts</th>
+        <th class="py-3 px-6 text-left">Total Workout Minutes</th>
+      </tr>
+    </thead>
+    <tbody class="text-gray-600 text-sm ">
+      <tr *ngFor="let user of getUserData()" class="border-b border-gray-200 hover:bg-gray-100">
+        <td class="py-3 px-6">{{ user.username }}</td>
+        <td class="py-3 px-6">{{ user.workoutType }}</td>
+        <td class="py-3 px-6">{{ user.numberOfWorkouts }}</td>
+        <td class="py-3 px-6">{{ user.totalWorkoutMinutes }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  
